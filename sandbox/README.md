@@ -1,4 +1,4 @@
-# sandbox
+# Sandbox
 
 > A Vue.js project
 
