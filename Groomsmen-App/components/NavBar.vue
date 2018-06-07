@@ -17,3 +17,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.nav {
+  background-color: black;
+}
+</style>

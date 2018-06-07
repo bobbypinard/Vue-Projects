@@ -1,25 +1,9 @@
 <template>
   <section class="container">
     <nav-bar />
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        groomsmen-app
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
+    <h1 class="title">
+      Groomsmen-App
+    </h1>
   </section>
 </template>
 
@@ -38,6 +22,7 @@ export default {
 <style>
 .container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 2fr 5fr;
+  height: 100%;
 }
 </style>
