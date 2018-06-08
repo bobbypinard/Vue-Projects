@@ -2,7 +2,7 @@
   <section class="container">
     <nav-bar />
     <h1 class="title">
-      Groomsmen-App
+      Best-Man-App
     </h1>
   </section>
 </template>
@@ -20,6 +20,13 @@ export default {
 </script>
 
 <style>
+body {
+  background-image: url("/assets/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .container {
   display: grid;
   grid-template-columns: 2fr 5fr;
