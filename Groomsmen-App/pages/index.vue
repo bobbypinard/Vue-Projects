@@ -1,20 +1,20 @@
 <template>
   <section class="container">
     <nav-bar />
-    <h1 class="title">
-      Best-Man-App
-    </h1>
+    <todo />
   </section>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
 import NavBar from '~/components/NavBar.vue'
+import Todo from '~/components/Todo.vue'
 
 export default {
   components: {
     AppLogo,
-    NavBar
+    NavBar,
+    Todo
   }
 }
 </script>
@@ -25,6 +25,9 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr, 2fr;
+  grid-gap: 5rem;
 }
 
 .container {
