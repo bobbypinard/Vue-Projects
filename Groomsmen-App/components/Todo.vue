@@ -16,7 +16,13 @@ export default {
         { title: 'Todo 5' },
         { title: 'Todo 6' },
         { title: 'Todo 7' },
-        { title: 'Todo 8' }
+        { title: 'Todo 8' },
+        { title: 'Todo 9' },
+        { title: 'Todo 10' },
+        { title: 'Todo 11' },
+        { title: 'Todo 12' },
+        { title: 'Todo 13' },
+        { title: 'Todo 14' }
       ]
     }
   }
@@ -25,7 +31,7 @@ export default {
 
 <style>
 ul {
-  //background-color: purple;
+  background-color: #00000079;
   text-align: center;
   padding-top: 5em;
 }
@@ -34,5 +40,6 @@ li {
   list-style-type: none;
   font-size: 2em;
   margin-bottom: 1em;
+  color: white;
 }
 </style>
