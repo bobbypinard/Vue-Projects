@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="todo in todos" :key="todo.title">{{ todo.title }}</li>
+    <li v-for="todo in todos" :key="todo.title">{{ todo.title }} <span>&nbsp;X</span> </li>
   </ul>  
 </template>
 
@@ -24,7 +24,15 @@ export default {
 </script>
 
 <style>
+ul {
+  //background-color: purple;
+  text-align: center;
+  padding-top: 5em;
+}
+
 li {
   list-style-type: none;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 </style>
