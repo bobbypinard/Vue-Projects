@@ -1,7 +1,7 @@
 <template>
   <section class="container">
-    <nav-bar />
-    <todo />
+    <nav-bar class="nav" />
+    <todo class="todo" />
   </section>
 </template>
 
@@ -25,14 +25,19 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: 1fr, 2fr;
-  grid-gap: 5rem;
 }
 
 .container {
   display: grid;
   grid-template-columns: 2fr 5fr;
   height: 100%;
+}
+
+.nav {
+  background-color: aqua;
+}
+
+.todo {
+  background-color: purple;
 }
 </style>

@@ -24,10 +24,6 @@ export default {
 </script>
 
 <style>
-ul {
-  background-color: blue;
-}
-
 li {
   list-style-type: none;
 }
