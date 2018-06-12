@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="todo in todos" :key="todo.title">{{ todo.title }} <button>X</button> </li>
+    <li v-for="todo in todos" :key="todo.title">{{ todo.title }} <button @click="deleteTodo(todo.title)">X</button> </li>
   </ul>  
 </template>
 
@@ -25,6 +25,11 @@ export default {
         { title: 'Todo 14' }
       ]
     }
+  },
+  methods: {
+    deleteTodo: function (message) {
+      console.log("Deleted")
+    }
   }
 }
 </script>
@@ -33,13 +38,13 @@ export default {
 ul {
   background-color: #00000079;
   text-align: center;
-  padding-top: 5em;
+  padding: 2em, 0, 2em, 0;
 }
 
 li {
   list-style-type: none;
   font-size: 2em;
-  margin-bottom: 1em;
+  padding-bottom: 1em;
   color: white;
 }
 </style>
