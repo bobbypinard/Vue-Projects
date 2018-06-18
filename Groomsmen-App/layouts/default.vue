@@ -24,6 +24,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: #ccac00;
+  text-align: center;
+}
+
+h1.header {
+  text-align: center;
+  font-family: 'Great Vibes';
+  font-size: 4em;
+  border-bottom: 2px solid #ccac00;
 }
 
 *, *:before, *:after {
