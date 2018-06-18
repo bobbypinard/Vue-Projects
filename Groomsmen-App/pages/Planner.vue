@@ -1,6 +1,6 @@
 <template>
   <div class="Planner">
-    <h1>Planner</h1>
+    <h1 class="header">Planner</h1>
     <todo />
   </div>
 </template>
@@ -16,13 +16,6 @@ export default {
 </script>
 
 <style>
-h1 {
-  text-align: center;
-  font-family: 'Great Vibes';
-  font-size: 4em;
-  margin-bottom: 2em;
-  border-bottom: 2px solid #ccac00;
-}
 .Planner {
 }
 </style>
