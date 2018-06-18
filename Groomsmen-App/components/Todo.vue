@@ -36,7 +36,6 @@ export default {
 
 <style>
 ul {
-  background-color: #00000079;
   text-align: center;
   padding: 2em, 0, 2em, 0;
 }
@@ -44,7 +43,7 @@ ul {
 li {
   list-style-type: none;
   font-size: 2em;
+  font-family: 'Dancing Script';
   padding-bottom: 1em;
-  color: white;
 }
 </style>
