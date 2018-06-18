@@ -1,5 +1,8 @@
 <template>
   <div class="Schedule">
+    <h1 class="header">
+      Schedule
+    </h1>
     <calendar />
   </div>
 </template>
