@@ -5,6 +5,8 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes');
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -14,6 +16,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ccac00;
 }
 
 *, *:before, *:after {
