@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="todo in todos" :key="todo.title">{{ todo.title }} <button @click="deleteTodo(todo.title)">X</button> </li>
+    <li v-for="todo in todos" :key="todo.title"><a @click="deleteTodo(todo.title)">X</a> <i class="fas fa-trash-alt"></i> {{ todo.title }}</li>
   </ul>  
 </template>
 
@@ -9,34 +9,30 @@ export default {
   data () {
     return {
       todos: [
-        { title: 'Todo 1' },
-        { title: 'Todo 2' },
-        { title: 'Todo 3' },
-        { title: 'Todo 4' },
-        { title: 'Todo 5' },
-        { title: 'Todo 6' },
-        { title: 'Todo 7' },
-        { title: 'Todo 8' },
-        { title: 'Todo 9' },
-        { title: 'Todo 10' },
-        { title: 'Todo 11' },
-        { title: 'Todo 12' },
-        { title: 'Todo 13' },
-        { title: 'Todo 14' }
+        { title: 'Reserve Lakehouse' },
+        { title: 'Rent Boat' },
+        { title: 'Buy fishing licenses' }
       ]
     }
   },
   methods: {
-    deleteTodo: function (message) {
-      console.log("Deleted")
+    deleteTodo: function (item) {
+      this.todos.splice(item, 1);
+      console.log("Deleted ", item);
     }
   }
 }
 </script>
 
 <style>
+a {
+  font-size: 1em;
+  font-family: 'Dancing Script';
+  color: silver;
+}
+
 ul {
-  text-align: center;
+  text-align: left;
   padding: 2em, 0, 2em, 0;
 }
 
