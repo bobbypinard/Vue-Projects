@@ -1,33 +1,44 @@
 <template>
   <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        Avril Lavigne
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+    <h1 class="title">
+      Avril Lavigne
+    </h1>
+    <div class="videos">
+      <card v-for="vid in vids" :key="vid.title" :title="vid.title" :link="vid.link"/>
     </div>
   </section>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import Card from '~/components/Card.vue'
 
 export default {
   components: {
-    AppLogo
+    Card
+  },
+  data () {
+    return {
+      title: 'testing',
+      vids: [
+        {
+          title: 'Blah',
+          link: ''
+        },
+        {
+          title: 'Blergh',
+          link: ''
+        },
+        {
+          title: 'Bluh',
+          link: ''
+        },
+        {
+          title: 'Bluff',
+          link: ''
+        }
+      ]
+    }
   }
 }
 </script>
@@ -35,30 +46,15 @@ export default {
 <style>
 .container {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  background-color: black;
+  color: #f700d6;
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  color: #ff40e5;
+  margin-bottom: .5em;
 }
 </style>
