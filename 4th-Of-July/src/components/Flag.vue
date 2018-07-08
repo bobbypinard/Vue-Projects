@@ -24,10 +24,6 @@
 </template>
 
 <style scoped>
-.container {
-  background-color: rgb(158, 210, 255);
-  min-height: 100vh;
-}
 
 .flag {
   height: 24em;
