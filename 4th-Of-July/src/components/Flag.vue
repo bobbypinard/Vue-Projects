@@ -1,30 +1,27 @@
 <template>
-  <div class="container">
-    <div class="flag stripes">
-      <div class="stars">
-        <div class="star" />
-      </div>
-
-      <div class="star-stripe"></div>
-      <div class="star-tripe"></div>
-      <div class="star-stripe"></div>
-      <div class="star-tripe"></div>
-      <div class="star-stripe"></div>
-      <div class="star-tripe"></div>
-      <div class="star-stripe"></div>
-
-      <div class="tripe"></div>
-      <div class="stripe"></div>
-      <div class="tripe"></div>
-      <div class="stripe"></div>
-      <div class="tripe"></div>
-      <div class="stripe"></div>
+  <div class="flag stripes">
+    <div class="stars">
+      <div class="star" />
     </div>
+
+    <div class="star-stripe"></div>
+    <div class="star-tripe"></div>
+    <div class="star-stripe"></div>
+    <div class="star-tripe"></div>
+    <div class="star-stripe"></div>
+    <div class="star-tripe"></div>
+    <div class="star-stripe"></div>
+
+    <div class="tripe"></div>
+    <div class="stripe"></div>
+    <div class="tripe"></div>
+    <div class="stripe"></div>
+    <div class="tripe"></div>
+    <div class="stripe"></div>
   </div>
 </template>
 
 <style scoped>
-
 .flag {
   height: 24em;
   width: 45em;
